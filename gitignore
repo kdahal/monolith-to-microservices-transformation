@@ -1,0 +1,73 @@
+# Dependencies
+*.csproj.user
+*.sln.docstates
+*.cache
+packages/
+packages.lock.json
+*.nupkg
+# NuGet v3 local cache
+~/.nuget/packages
+# External tools (NuGet restore)
+!**/packages/build/
+# Windows thumbnail cache
+Thumbs.db
+# .NET Core
+bin/
+obj/
+# User-specific files
+.rider/
+.vs/
+.vscode/settings.json
+# Logs
+logs
+*.log
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+# Docker
+.dockerignore
+Dockerfile*
+.docker
+# Kubernetes
+*.yaml.bak
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+# Azure
+*.azure
+# CI/CD
+!ci-cd/teamcity/*.xml
+!ci-cd/github-actions/*.yml
+# Tests
+TestResults/
+# Data (sensitive or large)
+data/*.db
+data/*.parquet
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+# OS
+.DS_Store
+# Local env
+.env
+# Init script (local only)
+init.sh

@@ -1,0 +1,52 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "microservices", "microservices", "{8A367DDA-5161-A942-4F09-60E4726C9306}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "monolith", "monolith", "{568E08D9-C627-9D87-BF1B-5CE72DAF60E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inventory-service", "microservices\inventory-service\inventory-service.csproj", "{BB178171-202E-CA9A-A605-0FBCD884A532}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "order-service", "microservices\order-service\order-service.csproj", "{3000D10E-45C7-217C-C9DD-E5E79A42B63F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "user-service", "microservices\user-service\user-service.csproj", "{9205D94F-5B56-D999-F42D-BFA2A0F2EFF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryApp", "monolith\InventoryApp\InventoryApp.csproj", "{D53EB11B-5D1E-8A7E-5B65-E9CEC4285690}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB178171-202E-CA9A-A605-0FBCD884A532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB178171-202E-CA9A-A605-0FBCD884A532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB178171-202E-CA9A-A605-0FBCD884A532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB178171-202E-CA9A-A605-0FBCD884A532}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3000D10E-45C7-217C-C9DD-E5E79A42B63F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3000D10E-45C7-217C-C9DD-E5E79A42B63F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3000D10E-45C7-217C-C9DD-E5E79A42B63F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3000D10E-45C7-217C-C9DD-E5E79A42B63F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9205D94F-5B56-D999-F42D-BFA2A0F2EFF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9205D94F-5B56-D999-F42D-BFA2A0F2EFF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9205D94F-5B56-D999-F42D-BFA2A0F2EFF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9205D94F-5B56-D999-F42D-BFA2A0F2EFF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D53EB11B-5D1E-8A7E-5B65-E9CEC4285690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D53EB11B-5D1E-8A7E-5B65-E9CEC4285690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D53EB11B-5D1E-8A7E-5B65-E9CEC4285690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D53EB11B-5D1E-8A7E-5B65-E9CEC4285690}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BB178171-202E-CA9A-A605-0FBCD884A532} = {8A367DDA-5161-A942-4F09-60E4726C9306}
+		{3000D10E-45C7-217C-C9DD-E5E79A42B63F} = {8A367DDA-5161-A942-4F09-60E4726C9306}
+		{9205D94F-5B56-D999-F42D-BFA2A0F2EFF5} = {8A367DDA-5161-A942-4F09-60E4726C9306}
+		{D53EB11B-5D1E-8A7E-5B65-E9CEC4285690} = {568E08D9-C627-9D87-BF1B-5CE72DAF60E7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7535A6C9-D3E3-487B-817A-1D91E3D612AF}
+	EndGlobalSection
+EndGlobal

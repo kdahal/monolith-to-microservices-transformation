@@ -1,5 +1,4 @@
 # monolith-to-microservices-transformation
-# Monolith-to-Microservices-Transformation-Repo
 
 This GitHub repository is a hands-on demonstration project inspired by the Technical Needs outlined for a Principal Architect role. It simulates the unraveling of a monolithic .NET application (e.g., a simple SaaS inventory management system) into a distributed microservices architecture. The goal is to showcase key skills like architectural transformation, cloud-native deployment on Azure with Kubernetes, observability, CI/CD, and integrations.
 
@@ -70,7 +69,7 @@ monolith-to-microservices-transformation/
 
 ## Quick Setup & Run
 1. **Prerequisites**: .NET 8 SDK, Docker, kubectl, Terraform, Azure CLI (free tier ok), Git.
-2. Clone: `git clone https://github.com/yourusername/monolith-to-microservices-transformation.git`
+2. Clone: `git clone https://github.com/kdahal/monolith-to-microservices-transformation.git`
 3. Monolith baseline: `cd monolith && dotnet run` (runs on localhost:5000, connects to local SQL Server).
 4. Deploy microservices:
    - `cd infrastructure/terraform && terraform init && terraform apply` (deploys AKS, Event Hubs).
