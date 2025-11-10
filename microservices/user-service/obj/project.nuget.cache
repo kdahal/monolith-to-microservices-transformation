@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B7hyiAv2Nzk=",
+  "dgSpecHash": "5+hXRUoTW5I=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kumar\\git2025\\Monolith-to-Microservices-Transformation-Repo\\Monolith-to-Microservices-Transformation\\microservices\\user-service\\user-service.csproj",
+  "projectFilePath": "C:\\Users\\kumar\\git2025\\monolith-to-microservices-transformation-repo\\monolith-to-microservices-transformation\\microservices\\user-service\\user-service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kumar\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\kumar\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

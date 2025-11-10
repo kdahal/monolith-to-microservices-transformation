@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xjZAo6rrvLg=",
+  "dgSpecHash": "ZkIm+hF84SA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kumar\\git2025\\Monolith-to-Microservices-Transformation-Repo\\Monolith-to-Microservices-Transformation\\microservices\\order-service\\order-service.csproj",
+  "projectFilePath": "C:\\Users\\kumar\\git2025\\monolith-to-microservices-transformation-repo\\monolith-to-microservices-transformation\\microservices\\order-service\\order-service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kumar\\.nuget\\packages\\azure.core\\1.46.2\\azure.core.1.46.2.nupkg.sha512",
     "C:\\Users\\kumar\\.nuget\\packages\\azure.core.amqp\\1.3.1\\azure.core.amqp.1.3.1.nupkg.sha512",

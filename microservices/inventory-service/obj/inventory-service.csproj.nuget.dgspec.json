@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kumar\\git2025\\Monolith-to-Microservices-Transformation-Repo\\Monolith-to-Microservices-Transformation\\microservices\\inventory-service\\inventory-service.csproj": {}
+    "C:\\Users\\kumar\\git2025\\monolith-to-microservices-transformation-repo\\monolith-to-microservices-transformation\\microservices\\inventory-service\\inventory-service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kumar\\git2025\\Monolith-to-Microservices-Transformation-Repo\\Monolith-to-Microservices-Transformation\\microservices\\inventory-service\\inventory-service.csproj": {
+    "C:\\Users\\kumar\\git2025\\monolith-to-microservices-transformation-repo\\monolith-to-microservices-transformation\\microservices\\inventory-service\\inventory-service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kumar\\git2025\\Monolith-to-Microservices-Transformation-Repo\\Monolith-to-Microservices-Transformation\\microservices\\inventory-service\\inventory-service.csproj",
+        "projectUniqueName": "C:\\Users\\kumar\\git2025\\monolith-to-microservices-transformation-repo\\monolith-to-microservices-transformation\\microservices\\inventory-service\\inventory-service.csproj",
         "projectName": "inventory-service",
-        "projectPath": "C:\\Users\\kumar\\git2025\\Monolith-to-Microservices-Transformation-Repo\\Monolith-to-Microservices-Transformation\\microservices\\inventory-service\\inventory-service.csproj",
+        "projectPath": "C:\\Users\\kumar\\git2025\\monolith-to-microservices-transformation-repo\\monolith-to-microservices-transformation\\microservices\\inventory-service\\inventory-service.csproj",
         "packagesPath": "C:\\Users\\kumar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kumar\\git2025\\Monolith-to-Microservices-Transformation-Repo\\Monolith-to-Microservices-Transformation\\microservices\\inventory-service\\obj\\",
+        "outputPath": "C:\\Users\\kumar\\git2025\\monolith-to-microservices-transformation-repo\\monolith-to-microservices-transformation\\microservices\\inventory-service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kumar\\AppData\\Roaming\\NuGet\\NuGet.Config"

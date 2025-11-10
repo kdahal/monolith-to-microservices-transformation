@@ -1,6 +1,6 @@
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=sql-server,1433;Database=InventoryMicro;User Id=sa;Password=pass@Passw0rd;TrustServerCertificate=true;MultipleActiveResultSets=true;Connection Timeout=60"
+    "DefaultConnection": "Server=sql-server,1433;Database=InventoryMicro;User Id=sa;Password=MySecurePass@123;TrustServerCertificate=true;MultipleActiveResultSets=true;Connection Timeout=60"
   },
   "Logging": {
     "LogLevel": {
