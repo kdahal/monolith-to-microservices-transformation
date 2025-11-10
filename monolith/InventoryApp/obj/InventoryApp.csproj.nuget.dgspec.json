@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kumar\\git2025\\Monolith-to-Microservices-Transformation-Repo\\Monolith-to-Microservices-Transformation\\monolith\\InventoryApp\\InventoryApp.csproj": {}
+    "C:\\Users\\kumar\\git2025\\Monolith-to-Microservices-Transformation-Repo\\monolith-to-microservices-transformation\\monolith\\InventoryApp\\InventoryApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kumar\\git2025\\Monolith-to-Microservices-Transformation-Repo\\Monolith-to-Microservices-Transformation\\monolith\\InventoryApp\\InventoryApp.csproj": {
+    "C:\\Users\\kumar\\git2025\\Monolith-to-Microservices-Transformation-Repo\\monolith-to-microservices-transformation\\monolith\\InventoryApp\\InventoryApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kumar\\git2025\\Monolith-to-Microservices-Transformation-Repo\\Monolith-to-Microservices-Transformation\\monolith\\InventoryApp\\InventoryApp.csproj",
+        "projectUniqueName": "C:\\Users\\kumar\\git2025\\Monolith-to-Microservices-Transformation-Repo\\monolith-to-microservices-transformation\\monolith\\InventoryApp\\InventoryApp.csproj",
         "projectName": "InventoryApp",
-        "projectPath": "C:\\Users\\kumar\\git2025\\Monolith-to-Microservices-Transformation-Repo\\Monolith-to-Microservices-Transformation\\monolith\\InventoryApp\\InventoryApp.csproj",
+        "projectPath": "C:\\Users\\kumar\\git2025\\Monolith-to-Microservices-Transformation-Repo\\monolith-to-microservices-transformation\\monolith\\InventoryApp\\InventoryApp.csproj",
         "packagesPath": "C:\\Users\\kumar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kumar\\git2025\\Monolith-to-Microservices-Transformation-Repo\\Monolith-to-Microservices-Transformation\\monolith\\InventoryApp\\obj\\",
+        "outputPath": "C:\\Users\\kumar\\git2025\\Monolith-to-Microservices-Transformation-Repo\\monolith-to-microservices-transformation\\monolith\\InventoryApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kumar\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -85,6 +85,84 @@ monolith-to-microservices-transformation/
 - **Observability**: ELK for logs/traces; Prometheus/Grafana for metrics (integrates Application Insights); certs via cert-manager.
 - **Tools & Scale**: Git branches for roadmap phases; xUnit tests; JIRA-like issues in CONTRIBUTING.md; mocks for ERP/HRIS/Ad exchanges in `/microservices/user-service/Integrations`. Simulates 10+ yrs enterprise SaaS with cloud migration history.
 
+Sure, let's add a "Local Setup" section to your README.md—it's a great idea to make the repo self-contained for anyone who clones it. Here's the text you can copy-paste right into your README (I kept it simple, with steps for monolith and microservices, including the tests we did). I put it after the "Overview" or "Project Structure" section if you have one.
+
+### Local Setup
+
+This project demonstrates a monolith app unraveling into microservices with .NET 8, EF Core, Docker, and SQL. Here's how to get it running locally.
+
+#### Prerequisites
+- .NET 8 SDK (download from [dotnet.microsoft.com](https://dotnet.microsoft.com)).
+- Docker Desktop (for containers and SQL).
+- EF Core tools: `dotnet tool install --global dotnet-ef --version 8.0.8`.
+
+#### 1. Start SQL and Microservices (Docker)
+From the root:
+```bash
+cd microservices
+docker-compose up -d  # Starts SQL, inventory, order, user services (~2 min first time)
+docker-compose ps  # Check all "Up"?
+docker logs microservices-sql-server-1 | tail -5  # "SQL Server is now ready"?
+```
+
+#### 2. Run Migrations
+```bash
+# Monolith
+cd ../../monolith/InventoryApp
+dotnet ef migrations add InitialCreate --startup-project .
+dotnet ef database update --startup-project .
+
+# Inventory-Service
+cd ../../microservices/inventory-service
+dotnet ef migrations add InitialCreate --startup-project .
+dotnet ef database update --startup-project .
+cd ..
+```
+
+#### 3. Run Monolith
+```bash
+cd ../../monolith/InventoryApp
+dotnet run
+```
+- Browser: http://localhost:5264/Inventory
+- Add item (Name: "Test", Quantity: 5, Price: 5.99)—submit, refresh (persists?).
+- Ctrl+C to stop, rerun `dotnet run`, refresh—still there? (DB win!)
+
+#### 4. Test Microservices
+```bash
+cd ../../microservices
+# Inventory (5001)
+curl http://localhost:5001/inventory  # []
+
+curl -X POST http://localhost:5001/inventory -H "Content-Type: application/json" -d '{"name":"Micro Test","quantity":5,"price":4.99}'  # Creates item
+
+curl http://localhost:5001/inventory  # Shows item
+
+# Persistence
+docker-compose restart inventory-service
+sleep 5
+curl http://localhost:5001/inventory  # Still shows?
+
+# Other Services
+curl -X POST http://localhost:5002/orders -H "Content-Type: application/json" -d '{"itemName":"Test Order","quantity":3}'  # Order event
+
+curl http://localhost:5003/users/1  # Mock user
+```
+
+#### Troubleshooting
+- Conn errors: Check SA_PASSWORD in docker-compose.yml matches appsettings.json.
+- 500 on /inventory: Check logs `docker-compose logs inventory-service`.
+- Swagger: http://localhost:5001/swagger (interactive test).
+
+#### Stop
+```bash
+docker-compose down  # Stops containers
+```
+
+Ready for cloud? See "Deployment" section for Terraform/AKS.
+
+---
+
 This repo is executable and extensible—fork it to practice leading a real transformation! PRs welcome for Java ports or AWS swaps. Questions? Open an issue.
 
 *Stars and forks appreciated to track community transformations! 🌟*
