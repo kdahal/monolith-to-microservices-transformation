@@ -70,4 +70,17 @@ data/*.parquet
 # Local env
 .env
 # Init script (local only)
-init.sh
+init-repo.sh
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+
+# Docker
+*.dockerignore
+
+# Secrets
+appsettings.json  # Or *.json for all
+.env
