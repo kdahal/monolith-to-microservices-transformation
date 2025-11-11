@@ -12,14 +12,6 @@ provider "azurerm" {
   features {}
 }
 
-# Variables (use terraform.tfvars for defaults)
-variable "location" {
-  default = "East US"
-}
-variable "resource_group_name" {
-  default = "monolith-to-micro-rg"
-}
-
 # Resource Group
 resource "azurerm_resource_group" "main" {
   name     = var.resource_group_name
@@ -36,7 +28,7 @@ resource "azurerm_kubernetes_cluster" "aks" {
   default_node_pool {
     name       = "default"
     node_count = 2
-    vm_size    = "Standard_D2_v2"
+    vm_size    = "Standard_D2_v3" # Available in West US 2 (general-purpose, 2 vCPU, 8  GB RAM)
   }
 
   identity {
